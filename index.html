@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Singh Infra | Power Erection & Transmission Tower Work</title>
+    <title>Singhinfra | Transmission Tower Erection Contractor</title>
     <meta
       name="description"
-      content="Singh Infra specializes in turnkey erection of EHV transmission lines, tower assembly, sub-station prep, rigging, and safety-compliant industrial erection work."
+      content="Singhinfra is a transmission tower erection contractor executing EHV tower erection and structural installation works for tier-1 EPC contractors including L&T, Bajel Projects, KEC International and Resonia across India."
     />
     <meta
       name="keywords"
-      content="transmission tower erection, EHV lines, substation rigging, power sector contractor, turnkey erection, industrial infrastructure"
+      content="tower erection company, transmission tower erection, EHV line contractor, power sector contractor India, substation rigging, L&T subcontractor, KEC subcontractor, Bajel subcontractor, Bihar tower erection"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -31,17 +31,17 @@
         theme: {
           extend: {
             colors: {
-              navy: '#0f172a',
-              slateDeep: '#111827',
-              steel: '#374151',
-              amber: '#f59e0b',
-              amberSoft: '#fbbf24',
-              ivory: '#f8fafc',
+              navy: '#0b1220',
+              steelblue: '#16233a',
+              rust: '#c9622a',
+              rustSoft: '#e2864f',
+              galvanize: '#8b95a1',
+              ivory: '#f5f3ee',
               line: '#e2e8f0'
             },
-            boxShadow: {
-              soft: '0 20px 40px rgba(15, 23, 42, 0.12)',
-              strong: '0 24px 48px rgba(15, 23, 42, 0.18)'
+            fontFamily: {
+              display: ['Archivo', 'sans-serif'],
+              body: ['Inter', 'sans-serif']
             }
           }
         }
@@ -49,13 +49,12 @@
     </script>
     <style>
       :root {
-        --navy: #0f172a;
-        --slate: #111827;
-        --steel: #374151;
-        --amber: #f59e0b;
-        --amber-soft: #fbbf24;
-        --ivory: #f8fafc;
-        --line: #e2e8f0;
+        --navy: #0b1220;
+        --steelblue: #16233a;
+        --rust: #c9622a;
+        --rust-soft: #e2864f;
+        --galvanize: #8b95a1;
+        --ivory: #f5f3ee;
       }
 
       html {
@@ -64,8 +63,12 @@
 
       body {
         font-family: 'Inter', sans-serif;
-        background: #f8fafc;
-        color: #0f172a;
+        background: var(--ivory);
+        color: var(--navy);
+      }
+
+      h1, h2, h3, .display {
+        font-family: 'Archivo', sans-serif;
       }
 
       .section-shell {
@@ -75,66 +78,109 @@
         padding-right: 1.25rem;
       }
 
+      .tower-mark {
+        position: relative;
+      }
+
+      /* Lattice tower signature mark used as a recurring motif */
+      .lattice-divider {
+        height: 3px;
+        background-image: repeating-linear-gradient(
+          115deg,
+          var(--rust) 0px,
+          var(--rust) 2px,
+          transparent 2px,
+          transparent 14px
+        );
+        opacity: 0.55;
+      }
+
       .hero-bg {
-        background-image: linear-gradient(90deg, rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.52)),
-          url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80');
-        background-size: cover;
-        background-position: center center;
+        background: linear-gradient(160deg, #0b1220 0%, #16233a 55%, #0b1220 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-bg::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(ellipse 900px 500px at 78% 20%, rgba(226, 134, 79, 0.14), transparent 60%),
+          repeating-linear-gradient(115deg, rgba(245, 243, 238, 0.035) 0px, rgba(245, 243, 238, 0.035) 1px, transparent 1px, transparent 34px),
+          repeating-linear-gradient(65deg, rgba(245, 243, 238, 0.035) 0px, rgba(245, 243, 238, 0.035) 1px, transparent 1px, transparent 34px);
+        pointer-events: none;
+      }
+
+      .hero-tower-svg {
+        position: absolute;
+        right: -2%;
+        bottom: -4%;
+        height: 108%;
+        width: auto;
+        max-width: 60%;
+        opacity: 0.9;
+        pointer-events: none;
+      }
+
+      @media (max-width: 900px) {
+        .hero-tower-svg {
+          opacity: 0.28;
+          right: -18%;
+        }
       }
 
       .soft-panel {
-        background: rgba(255, 255, 255, 0.96);
-        border: 1px solid rgba(148, 163, 184, 0.22);
-        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+        background: #ffffff;
+        border: 1px solid rgba(139, 149, 161, 0.25);
+        box-shadow: 0 18px 45px rgba(11, 18, 32, 0.08);
       }
 
       .client-strip {
-        background: linear-gradient(180deg, #eef2f7 0%, #f8fafc 100%);
-        border-top: 1px solid rgba(148, 163, 184, 0.25);
-        border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+        background: var(--navy);
       }
 
       .hover-lift {
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
       }
 
       .hover-lift:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 22px 38px rgba(15, 23, 42, 0.12);
-      }
-
-      .number-badge {
-        background: rgba(245, 158, 11, 0.15);
-        color: var(--amber);
+        transform: translateY(-5px);
+        box-shadow: 0 22px 38px rgba(11, 18, 32, 0.14);
+        border-color: rgba(201, 98, 42, 0.5);
       }
 
       .cta-btn {
-        background: linear-gradient(135deg, #fbbf24, #f59e0b);
-        color: #111827;
+        background: var(--rust);
+        color: #fff;
         font-weight: 700;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       }
 
       .cta-btn:hover {
         transform: translateY(-1px);
-        box-shadow: 0 18px 30px rgba(245, 158, 11, 0.22);
+        background: var(--rust-soft);
+        box-shadow: 0 18px 30px rgba(201, 98, 42, 0.28);
       }
 
       .secondary-btn {
-        border: 1px solid rgba(248, 250, 252, 0.45);
+        border: 1px solid rgba(245, 243, 238, 0.35);
         color: white;
-        background: rgba(15, 23, 42, 0.2);
+        background: rgba(245, 243, 238, 0.06);
+      }
+
+      .secondary-btn:hover {
+        background: rgba(245, 243, 238, 0.12);
       }
 
       .stat-card {
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
+        background: rgba(245, 243, 238, 0.06);
+        border: 1px solid rgba(245, 243, 238, 0.14);
       }
 
       .project-card {
         overflow: hidden;
-        border: 1px solid rgba(148, 163, 184, 0.25);
+        border: 1px solid rgba(139, 149, 161, 0.3);
       }
 
       .project-card img {
@@ -143,11 +189,26 @@
       }
 
       .value-banner {
-        background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(31, 41, 55, 0.96));
+        background: linear-gradient(160deg, var(--navy), var(--steelblue));
       }
 
       .footer-grid {
-        background: #0b1120;
+        background: #070c16;
+      }
+
+      .client-badge {
+        border: 1px solid rgba(245, 243, 238, 0.16);
+        background: rgba(245, 243, 238, 0.03);
+        transition: border-color 0.2s ease, background 0.2s ease;
+      }
+
+      .client-badge:hover {
+        border-color: rgba(201, 98, 42, 0.55);
+        background: rgba(245, 243, 238, 0.06);
+      }
+
+      .eyebrow {
+        letter-spacing: 0.28em;
       }
 
       @media (max-width: 768px) {
@@ -158,86 +219,139 @@
     </style>
   </head>
   <body>
-    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-ivory/95 backdrop-blur-md">
       <div class="section-shell flex items-center justify-between py-4">
-        <a href="#home" class="flex items-center gap-3" aria-label="Singh Infra home">
-          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-lg font-black text-white shadow-soft">
-            S
+        <a href="#home" class="flex items-center gap-3" aria-label="Singhinfra home">
+          <div class="flex h-11 w-11 items-center justify-center rounded-md bg-navy text-lg font-black text-white">
+            <i class="fa-solid fa-tower-broadcast text-rustSoft"></i>
           </div>
           <div>
-            <div class="text-lg font-extrabold tracking-tight text-navy">Singh Infra</div>
-            <div class="text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-500">Power Erection</div>
+            <div class="text-base font-extrabold leading-tight tracking-tight text-navy sm:text-lg">Singinfra</div>
+            <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-galvanize">Power Infrastructure</div>
           </div>
         </a>
 
-        <nav class="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex" aria-label="Main navigation">
-          <a href="#home" class="transition hover:text-amber">Home</a>
-          <a href="#about" class="transition hover:text-amber">About</a>
-          <a href="#services" class="transition hover:text-amber">Services</a>
-          <a href="#projects" class="transition hover:text-amber">Projects</a>
-          <a href="#contact" class="transition hover:text-amber">Contact</a>
+        <nav class="hidden items-center gap-8 text-sm font-semibold text-steelblue md:flex" aria-label="Main navigation">
+          <a href="#home" class="transition hover:text-rust">Home</a>
+          <a href="#about" class="transition hover:text-rust">About Us</a>
+          <a href="#services" class="transition hover:text-rust">Services</a>
+          <a href="#clients" class="transition hover:text-rust">Clients</a>
+          <a href="#projects" class="transition hover:text-rust">Projects</a>
+          <a href="#contact" class="transition hover:text-rust">Contact</a>
         </nav>
 
         <div class="flex items-center gap-3">
-          <div class="hidden items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-2 text-sm font-semibold text-amber-700 sm:flex">
-            <i class="fa-solid fa-phone-volume"></i>
-            <a href="tel:+919876543210">+91 98765 43210</a>
-          </div>
-          <a href="#contact" class="cta-btn rounded-full px-4 py-2.5 text-sm shadow-sm sm:px-5">Request a Profile</a>
+          <a href="#contact" class="cta-btn rounded-md px-4 py-2.5 text-sm sm:px-5">Request a Quote</a>
         </div>
       </div>
     </header>
 
     <main id="home">
       <section class="hero-bg min-h-[640px] text-white">
+        <svg class="hero-tower-svg" viewBox="0 0 400 700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="#e2864f" stroke-width="2.5" fill="none" opacity="0.85">
+            <!-- crossarms -->
+            <line x1="40" y1="90" x2="360" y2="90" />
+            <line x1="70" y1="150" x2="330" y2="150" />
+            <line x1="95" y1="210" x2="305" y2="210" />
+            <!-- main legs -->
+            <path d="M 150 90 L 90 690" />
+            <path d="M 250 90 L 310 690" />
+            <path d="M 165 150 L 130 690" />
+            <path d="M 235 150 L 270 690" />
+            <!-- lattice cross-bracing, body -->
+            <path d="M 150 90 L 250 150 M 250 90 L 150 150" />
+            <path d="M 165 150 L 235 210 M 235 150 L 165 210" />
+            <path d="M 130 260 L 270 260" />
+            <path d="M 130 260 L 270 320 M 270 260 L 130 320" />
+            <path d="M 118 320 L 282 320" />
+            <path d="M 118 320 L 282 390 M 282 320 L 118 390" />
+            <path d="M 106 390 L 294 390" />
+            <path d="M 106 390 L 294 460 M 294 390 L 106 460" />
+            <path d="M 98 460 L 302 460" />
+            <path d="M 98 460 L 302 540 M 302 460 L 98 540" />
+            <path d="M 92 540 L 308 540" />
+            <path d="M 92 540 L 308 620 M 308 540 L 92 620" />
+            <path d="M 90 620 L 310 620" />
+            <path d="M 90 620 L 310 690 M 310 620 L 90 690" />
+            <!-- peak -->
+            <path d="M 200 40 L 150 90 M 200 40 L 250 90" />
+            <line x1="200" y1="10" x2="200" y2="40" />
+          </g>
+          <g fill="#e2864f" opacity="0.9">
+            <circle cx="200" cy="10" r="4" />
+          </g>
+        </svg>
         <div class="section-shell flex min-h-[640px] items-center py-16 md:py-20">
           <div class="max-w-2xl">
-            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-slate-100">
-              <span class="h-2.5 w-2.5 rounded-full bg-amber"></span>
-              Turnkey erection specialists
+            <div class="mb-6 inline-flex items-center gap-2 rounded-sm border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-slate-100">
+              <span class="h-2 w-2 bg-rustSoft"></span>
+              Transmission Tower Erection Contractor
             </div>
 
-            <h1 class="max-w-xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Engineered for Power.<br />
-              Built for Scale.
+            <h1 class="max-w-xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              We Put Steel<br />
+              in the Grid.
             </h1>
 
             <p class="mt-6 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">
-              We execute high-capacity transmission and substation work for critical power infrastructure projects with disciplined field planning, rigging readiness, and EHS-first execution across EHV line environments.
+              Singhinfra specializes in EHV transmission tower erection, executed as a trusted field partner to India's leading power infrastructure EPC contractors.
             </p>
 
             <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a href="#contact" class="cta-btn inline-flex items-center justify-center rounded-full px-6 py-3.5 text-base">Request a Capability Profile</a>
-              <a href="#services" class="secondary-btn inline-flex items-center justify-center rounded-full px-6 py-3.5 text-base">Our Capabilities</a>
+              <a href="#contact" class="cta-btn inline-flex items-center justify-center rounded-md px-6 py-3.5 text-base">Request a Quote</a>
+              <a href="#services" class="secondary-btn inline-flex items-center justify-center rounded-md px-6 py-3.5 text-base">Our Capabilities</a>
             </div>
 
             <div class="mt-10 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
-              <div class="stat-card rounded-2xl p-4">
-                <div class="text-2xl font-black text-white">EHV</div>
-                <div class="mt-1 text-xs uppercase tracking-[0.18em] text-slate-200">Transmission lines</div>
+              <div class="stat-card rounded-md p-4">
+                <div class="text-2xl font-black text-white">765kV</div>
+                <div class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-300">Up to EHV class</div>
               </div>
-              <div class="stat-card rounded-2xl p-4">
-                <div class="text-2xl font-black text-white">Rigging</div>
-                <div class="mt-1 text-xs uppercase tracking-[0.18em] text-slate-200">Field capacity</div>
+              <div class="stat-card rounded-md p-4">
+                <div class="text-2xl font-black text-white">4+</div>
+                <div class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-300">Tier-1 EPC clients</div>
               </div>
-              <div class="stat-card rounded-2xl p-4">
+              <div class="stat-card rounded-md p-4">
                 <div class="text-2xl font-black text-white">Zero</div>
-                <div class="mt-1 text-xs uppercase tracking-[0.18em] text-slate-200">Harm policy</div>
+                <div class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-300">Harm policy</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="client-strip">
-        <div class="section-shell py-5">
-          <div class="flex flex-col items-center justify-between gap-3 md:flex-row">
-            <p class="text-xs font-bold uppercase tracking-[0.32em] text-slate-500">Trusted by</p>
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-lg font-semibold tracking-wide text-slate-500 md:text-xl">
-              <span class="opacity-80">[L&T]</span>
-              <span class="opacity-80">[Bajel Projects Limited]</span>
-              <span class="opacity-80">[Resonia]</span>
-              <span class="opacity-80">[Other Infrastructure Majors]</span>
+      <section id="clients" class="client-strip">
+        <div class="section-shell py-10">
+          <p class="mb-6 text-center text-xs font-bold uppercase tracking-[0.32em] text-galvanize">Trusted by leading EPC contractors</p>
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="client-badge flex flex-col items-center gap-3 rounded-md px-4 py-6 text-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-rust/15 text-xl text-rustSoft">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <span class="text-sm font-bold tracking-wide text-white">L&amp;T</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-galvanize">Larsen &amp; Toubro</span>
+            </div>
+            <div class="client-badge flex flex-col items-center gap-3 rounded-md px-4 py-6 text-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-rust/15 text-xl text-rustSoft">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <span class="text-sm font-bold tracking-wide text-white">Bajel Projects</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-galvanize">Bajel Projects Limited</span>
+            </div>
+            <div class="client-badge flex flex-col items-center gap-3 rounded-md px-4 py-6 text-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-rust/15 text-xl text-rustSoft">
+                <i class="fa-solid fa-tower-observation"></i>
+              </div>
+              <span class="text-sm font-bold tracking-wide text-white">KEC International</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-galvanize">RPG Group</span>
+            </div>
+            <div class="client-badge flex flex-col items-center gap-3 rounded-md px-4 py-6 text-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-rust/15 text-xl text-rustSoft">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <span class="text-sm font-bold tracking-wide text-white">Resonia</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-galvanize">Power Infrastructure</span>
             </div>
           </div>
         </div>
@@ -247,47 +361,61 @@
         <div class="section-shell">
           <div class="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <p class="mb-4 text-sm font-bold uppercase tracking-[0.28em] text-amber">About our capacity</p>
-              <h2 class="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-                Structured execution for critical power infrastructure work.
+              <p class="mb-4 text-sm font-bold uppercase tracking-[0.28em] text-rust">About us</p>
+              <h2 class="text-3xl font-black tracking-tight text-navy sm:text-4xl">
+                A dedicated tower erection contractor, built for tier-1 EPC delivery.
               </h2>
-              <p class="mt-5 max-w-xl text-lg leading-8 text-slate-600">
-                We are a specialized power erection sub-contractor operating with a disciplined field approach, focused execution teams, and mobile workfront readiness for transmission line erection, substation preparation, and heavy-lift rigging support.
+              <p class="mt-5 max-w-xl text-lg leading-8 text-steelblue">
+                Singhinfra is a specialist tower erection company operating across India's power transmission sector. We take up dedicated erection packages from tier-1 EPC contractors and deliver them with disciplined site planning, trained rigging crews, and safety-first execution.
               </p>
-              <p class="mt-5 max-w-xl text-lg leading-8 text-slate-600">
-                Our capacity is built around safe mobilization, rapid site readiness, and dependable supervision under challenging schedules and high-risk operating environments.
+              <p class="mt-5 max-w-xl text-lg leading-8 text-steelblue">
+                Since 2022, we have built our reputation the way this industry demands: dependable erection execution, precise structural assembly, and disciplined field delivery — package after package, site after site. Foundation work is already in place before mobilization, and conductor stringing is performed by the designated stringing contractor. Headquartered in Khagaria, Bihar, our crews mobilize to transmission corridors across the region.
               </p>
+              <div class="mt-8 flex flex-wrap gap-6">
+                <div>
+                  <div class="text-3xl font-black text-navy">2022</div>
+                  <div class="text-xs uppercase tracking-[0.16em] text-galvanize">Operating since</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-black text-navy">100%</div>
+                  <div class="text-xs uppercase tracking-[0.16em] text-galvanize">Subcontractor focus</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-black text-navy">Bihar</div>
+                  <div class="text-xs uppercase tracking-[0.16em] text-galvanize">Home base</div>
+                </div>
+              </div>
             </div>
 
-            <div class="soft-panel rounded-3xl p-7">
+            <div class="soft-panel rounded-md p-7">
               <div class="grid gap-4 sm:grid-cols-2">
-                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+                <div class="rounded-md border border-slate-200 bg-slate-50 p-5">
+                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rust">
                     <i class="fa-solid fa-bolt"></i>
                   </div>
                   <div class="text-3xl font-black text-navy">EHV</div>
-                  <p class="mt-2 text-sm leading-6 text-slate-600">Transmission line erection and tower work execution.</p>
+                  <p class="mt-2 text-sm leading-6 text-steelblue">Transmission line support and tower erection execution.</p>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+                <div class="rounded-md border border-slate-200 bg-slate-50 p-5">
+                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rust">
                     <i class="fa-solid fa-helmet-safety"></i>
                   </div>
                   <div class="text-3xl font-black text-navy">EHS</div>
-                  <p class="mt-2 text-sm leading-6 text-slate-600">Strict field compliance and protected work methods.</p>
+                  <p class="mt-2 text-sm leading-6 text-steelblue">Strict compliance, PPE discipline, and safe work methods.</p>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+                <div class="rounded-md border border-slate-200 bg-slate-50 p-5">
+                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rust">
                     <i class="fa-solid fa-truck-moving"></i>
                   </div>
-                  <div class="text-3xl font-black text-navy">Fleet</div>
-                  <p class="mt-2 text-sm leading-6 text-slate-600">Rigging, lifting, and transport support for site mobilization.</p>
+                  <div class="text-3xl font-black text-navy">Rigging</div>
+                  <p class="mt-2 text-sm leading-6 text-steelblue">Heavy-lift planning and structural movement support at site.</p>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+                <div class="rounded-md border border-slate-200 bg-slate-50 p-5">
+                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rust">
                     <i class="fa-solid fa-arrows-rotate"></i>
                   </div>
                   <div class="text-3xl font-black text-navy">Turnkey</div>
-                  <p class="mt-2 text-sm leading-6 text-slate-600">Execution support from site prep to final line finish.</p>
+                  <p class="mt-2 text-sm leading-6 text-steelblue">Execution support from mobilization and erection to final alignment.</p>
                 </div>
               </div>
             </div>
@@ -295,54 +423,54 @@
         </div>
       </section>
 
-      <section id="services" class="bg-slate-900 py-20 text-white">
+      <section id="services" class="bg-navy py-20 text-white">
         <div class="section-shell">
           <div class="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div>
-              <p class="text-sm font-bold uppercase tracking-[0.28em] text-amber">Our services</p>
-              <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Execution capability across the transmission chain.</h2>
+              <p class="text-sm font-bold uppercase tracking-[0.28em] text-rustSoft">Our services</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Tower erection capability across the transmission chain.</h2>
             </div>
             <p class="max-w-xl text-base leading-7 text-slate-300">
-              We deliver disciplined field execution for transmission and power infrastructure work, with a strong focus on site readiness, quality control, and safe installation practices.
+              We deliver disciplined field execution for power transmission infrastructure, with a strong focus on tower erection, structural alignment, and safe installation practices for dedicated packages awarded by EPC contractors.
             </p>
           </div>
 
           <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <article class="hover-lift rounded-3xl border border-slate-700 bg-slate-800 p-6">
-              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber/15 text-2xl text-amber">
-                <i class="fa-solid fa-digging"></i>
+            <article class="hover-lift rounded-md border border-white/10 bg-steelblue/60 p-6">
+              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-md bg-rust/15 text-2xl text-rustSoft">
+                <i class="fa-solid fa-clipboard-check"></i>
               </div>
-              <h3 class="text-xl font-bold">Foundation Work & Sub-station Prep</h3>
+              <h3 class="text-xl font-bold">Mobilization &amp; Site Readiness</h3>
               <p class="mt-4 text-sm leading-7 text-slate-300">
-                Site preparation, foundation support, and substation readiness aligned with engineering drawings and schedule-critical mobilization plans.
+                Pre-erection mobilization, survey coordination, crew planning, and site readiness support aligned with engineering drawings and schedules.
               </p>
             </article>
 
-            <article class="hover-lift rounded-3xl border border-slate-700 bg-slate-800 p-6">
-              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber/15 text-2xl text-amber">
+            <article class="hover-lift rounded-md border border-white/10 bg-steelblue/60 p-6">
+              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-md bg-rust/15 text-2xl text-rustSoft">
                 <i class="fa-solid fa-building-columns"></i>
               </div>
-              <h3 class="text-xl font-bold">Structural Tower Assembly & Erection</h3>
+              <h3 class="text-xl font-bold">Structural Tower Assembly &amp; Erection</h3>
               <p class="mt-4 text-sm leading-7 text-slate-300">
                 Safe tower fabrication, assembly sequencing, and erection execution for transmission corridors and strategic infrastructure layouts.
               </p>
             </article>
 
-            <article class="hover-lift rounded-3xl border border-slate-700 bg-slate-800 p-6">
-              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber/15 text-2xl text-amber">
-                <i class="fa-solid fa-wrench"></i>
+            <article class="hover-lift rounded-md border border-white/10 bg-steelblue/60 p-6">
+              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-md bg-rust/15 text-2xl text-rustSoft">
+                <i class="fa-solid fa-arrows-rotate"></i>
               </div>
-              <h3 class="text-xl font-bold">Line Stringing & Sagging</h3>
+              <h3 class="text-xl font-bold">Alignment, Rigging &amp; Final Adjustments</h3>
               <p class="mt-4 text-sm leading-7 text-slate-300">
-                Stringing, clamping, and sagging operations carried out with controlled execution checkpoints and accurate installation standards.
+                Positioning, rigging support, and final structural alignment executed with controlled checkpoints and installation discipline.
               </p>
             </article>
 
-            <article class="hover-lift rounded-3xl border border-slate-700 bg-slate-800 p-6">
-              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber/15 text-2xl text-amber">
+            <article class="hover-lift rounded-md border border-white/10 bg-steelblue/60 p-6">
+              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-md bg-rust/15 text-2xl text-rustSoft">
                 <i class="fa-solid fa-shield-heart"></i>
               </div>
-              <h3 class="text-xl font-bold">Strict EHS Compliance & Quality Assurance</h3>
+              <h3 class="text-xl font-bold">Strict EHS Compliance &amp; Quality Assurance</h3>
               <p class="mt-4 text-sm leading-7 text-slate-300">
                 PPE enforcement, risk control, CEA-aligned safety discipline, and quality-led execution from pre-start to handover.
               </p>
@@ -351,79 +479,182 @@
         </div>
       </section>
 
-      <section id="projects" class="py-20 bg-white">
+      <!-- <section id="projects" class="py-20 bg-ivory">
         <div class="section-shell">
           <div class="mb-12 max-w-3xl">
-            <p class="text-sm font-bold uppercase tracking-[0.28em] text-amber">Project track record</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Execution visibility across fast-moving infrastructure programs.</h2>
+            <p class="text-sm font-bold uppercase tracking-[0.28em] text-rust">Project track record</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-navy sm:text-4xl">Execution visibility across active transmission and infrastructure programs.</h2>
           </div>
-
           <div class="grid gap-8 lg:grid-cols-2">
-            <article class="project-card hover-lift rounded-3xl bg-slate-50 shadow-soft">
+            <article class="project-card hover-lift rounded-md bg-white">
               <img
                 src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80"
                 alt="Transmission line tower installation project"
               />
               <div class="p-7">
-                <div class="mb-3 inline-flex rounded-full bg-amber/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber">Partnered with L&T</div>
-                <h3 class="text-2xl font-bold text-slate-900">400kV Double Circuit Transmission Line Setup</h3>
-                <p class="mt-4 text-base leading-7 text-slate-600">
+                <div class="mb-3 inline-flex rounded-sm bg-rust/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-rust">Partnered with L&amp;T</div>
+                <h3 class="text-2xl font-bold text-navy">400kV Double Circuit Transmission Line Setup</h3>
+                <p class="mt-4 text-base leading-7 text-steelblue">
                   We supported the execution of a high-voltage line setup with site sequencing, rigorous safety controls, and tower erection operations executed under demanding project timelines.
                 </p>
               </div>
             </article>
 
-            <article class="project-card hover-lift rounded-3xl bg-slate-50 shadow-soft">
+            <article class="project-card hover-lift rounded-md bg-white">
               <img
                 src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
                 alt="Substation and rigging project execution"
               />
               <div class="p-7">
-                <div class="mb-3 inline-flex rounded-full bg-amber/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-amber">Partnered with Bajel Projects Ltd.</div>
-                <h3 class="text-2xl font-bold text-slate-900">Multi-Location Substation Erection & Rigging</h3>
-                <p class="mt-4 text-base leading-7 text-slate-600">
+                <div class="mb-3 inline-flex rounded-sm bg-rust/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-rust">Partnered with Bajel Projects Limited</div>
+                <h3 class="text-2xl font-bold text-navy">Multi-Location Substation Erection &amp; Rigging</h3>
+                <p class="mt-4 text-base leading-7 text-steelblue">
                   Our teams coordinated structural erection and rigging support across multiple locations, maintaining quality assurance, mobility, and disciplined field supervision.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card hover-lift rounded-md bg-white">
+              <img
+                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80"
+                alt="Steel lattice transmission tower against sky"
+              />
+              <div class="p-7">
+                <div class="mb-3 inline-flex rounded-sm bg-rust/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-rust">Partnered with KEC International</div>
+                <h3 class="text-xl font-bold">EHV Lattice Tower Erection Package</h3>
+                <p class="mt-4 text-base leading-7 text-steelblue">
+                  Dedicated erection package delivered across multiple tower locations with strict adherence to drawing tolerances and site safety protocols. Foundation work was already completed by the main contractor, and the stringing work was carried out separately by the designated contractor.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card hover-lift rounded-md bg-white">
+              <img
+                src="https://images.unsplash.com/photo-1483197002559-70413f0524ad?auto=format&fit=crop&w=1200&q=80"
+                alt="Power infrastructure worksite at dusk"
+              />
+              <div class="p-7">
+                <div class="mb-3 inline-flex rounded-sm bg-rust/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-rust">Partnered with Resonia</div>
+                <h3 class="text-2xl font-bold text-navy">Structural Erection Support for Regional Corridor</h3>
+                <p class="mt-4 text-base leading-7 text-steelblue">
+                  Provided crew mobilization and structural erection support along an active transmission corridor, coordinating closely with EPC site engineers.
                 </p>
               </div>
             </article>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="value-banner py-20 text-white">
         <div class="section-shell">
           <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <p class="text-sm font-bold uppercase tracking-[0.28em] text-amber">Core values & EHS</p>
-              <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Zero-harm execution, disciplined supervision, and compliance-first delivery.</h2>
+              <p class="text-sm font-bold uppercase tracking-[0.28em] text-rustSoft">Core values &amp; EHS</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Zero-harm execution, disciplined supervision and compliance-first delivery.</h2>
               <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-200">
                 We uphold a zero-harm policy across all sites, enforce consistent PPE usage, and follow safety management practices aligned with CEA guidance and contractor-specific requirements for live power infrastructure work.
               </p>
             </div>
 
             <div class="grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+              <div class="rounded-md border border-white/10 bg-white/5 p-5">
+                <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rustSoft">
                   <i class="fa-solid fa-user-shield"></i>
                 </div>
                 <h3 class="text-xl font-bold">Zero-Harm Policy</h3>
                 <p class="mt-3 text-sm leading-6 text-slate-200">Safety is a precondition for execution, not an afterthought.</p>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+              <div class="rounded-md border border-white/10 bg-white/5 p-5">
+                <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rustSoft">
                   <i class="fa-solid fa-hard-hat"></i>
                 </div>
                 <h3 class="text-xl font-bold">PPE Enforcement</h3>
                 <p class="mt-3 text-sm leading-6 text-slate-200">We maintain strict field discipline and safe work behavior.</p>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-5 sm:col-span-2">
-                <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-amber/15 text-xl text-amber">
+              <div class="rounded-md border border-white/10 bg-white/5 p-5 sm:col-span-2">
+                <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-md bg-rust/15 text-xl text-rustSoft">
                   <i class="fa-solid fa-file-contract"></i>
                 </div>
                 <h3 class="text-xl font-bold">CEA Safety Compliance</h3>
                 <p class="mt-3 text-sm leading-6 text-slate-200">Our execution practices align with central safety expectations for electrical infrastructure, access control, and operational discipline.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-info" class="py-20 bg-ivory">
+        <div class="section-shell">
+          <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p class="mb-4 text-sm font-bold uppercase tracking-[0.28em] text-rust">Get in touch</p>
+              <h2 class="text-3xl font-black tracking-tight text-navy sm:text-4xl">Have a tower erection package to discuss?</h2>
+              <p class="mt-5 max-w-md text-lg leading-8 text-steelblue">
+                We're ready to mobilize for structural erection packages and related site execution support. Reach out with your site details, timelines, and voltage class, and we'll respond with our capability and availability.
+              </p>
+
+              <div class="mt-8 space-y-5">
+                <div class="flex items-start gap-4">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-rust/15 text-lg text-rust">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-[0.16em] text-galvanize">Email</div>
+                    <a href="mailto:santoshsinghp112@gmail.com" class="text-base font-semibold text-navy transition hover:text-rust">santoshsinghp112@gmail.com</a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-rust/15 text-lg text-rust">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-[0.16em] text-galvanize">Head Office</div>
+                    <p class="text-base font-semibold text-navy">Ward No. 10, Dist – Khagaria, Post – Chautham,<br />At – Bharpura, Lagma, Khagaria, Bihar, 851201</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-rust/15 text-lg text-rust">
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-[0.16em] text-galvanize">Proprietor</div>
+                    <p class="text-base font-semibold text-navy">Santosh Singh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="soft-panel rounded-md p-7 sm:p-8" onsubmit="event.preventDefault(); window.location.href='mailto:santoshsinghp112@gmail.com?subject=' + encodeURIComponent('Website Enquiry from ' + document.getElementById('cf-name').value) + '&body=' + encodeURIComponent(document.getElementById('cf-message').value + '\n\nFrom: ' + document.getElementById('cf-name').value + '\nCompany: ' + document.getElementById('cf-company').value + '\nEmail: ' + document.getElementById('cf-email').value + '\nPhone: ' + document.getElementById('cf-phone').value);">
+              <h3 class="text-xl font-bold text-navy">Send a query</h3>
+              <p class="mt-2 text-sm text-steelblue">Fill in your details and we'll get back with a response.</p>
+
+              <div class="mt-6 grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="cf-name" class="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-galvanize">Name</label>
+                  <input id="cf-name" type="text" required class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy focus:border-rust focus:outline-none focus:ring-2 focus:ring-rust/20" placeholder="Your full name" />
+                </div>
+                <div>
+                  <label for="cf-company" class="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-galvanize">Company</label>
+                  <input id="cf-company" type="text" class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy focus:border-rust focus:outline-none focus:ring-2 focus:ring-rust/20" placeholder="Your company" />
+                </div>
+                <div>
+                  <label for="cf-email" class="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-galvanize">Email</label>
+                  <input id="cf-email" type="email" required class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy focus:border-rust focus:outline-none focus:ring-2 focus:ring-rust/20" placeholder="you@company.com" />
+                </div>
+                <div>
+                  <label for="cf-phone" class="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-galvanize">Phone</label>
+                  <input id="cf-phone" type="tel" class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy focus:border-rust focus:outline-none focus:ring-2 focus:ring-rust/20" placeholder="+91" />
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <label for="cf-message" class="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-galvanize">Project details</label>
+                <textarea id="cf-message" rows="4" required class="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy focus:border-rust focus:outline-none focus:ring-2 focus:ring-rust/20" placeholder="Tell us about the package, voltage class, location and timeline"></textarea>
+              </div>
+
+              <button type="submit" class="cta-btn mt-6 w-full rounded-md px-6 py-3.5 text-base">Send Enquiry</button>
+              <p class="mt-3 text-center text-xs text-galvanize">This opens your email client addressed to santoshsinghp112@gmail.com</p>
+            </form>
           </div>
         </div>
       </section>
@@ -434,49 +665,53 @@
         <div class="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
           <div class="xl:col-span-1">
             <div class="mb-5 flex items-center gap-3">
-              <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber text-lg font-black text-slate-900">S</div>
+              <div class="flex h-11 w-11 items-center justify-center rounded-md bg-rust text-lg font-black text-white">
+                <i class="fa-solid fa-tower-broadcast"></i>
+              </div>
               <div>
-                <div class="text-lg font-extrabold text-white">Singh Infra</div>
-                <div class="text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-400">Turnkey erection</div>
+                <div class="text-lg font-extrabold text-white">Santosh Singh</div>
+                <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-400">Power Infrastructure</div>
               </div>
             </div>
             <p class="max-w-xs text-sm leading-7 text-slate-300">
-              We deliver efficient, safety-driven field execution for transmission tower erection, substation support, and high-voltage power infrastructure projects.
+              We deliver safety-driven field execution for transmission tower erection, structural support, and high-voltage infrastructure projects across active workfronts, with foundation and stringing handled by the respective contractor packages.
             </p>
           </div>
 
           <div>
-            <h3 class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-slate-400">Contact</h3>
+            <h3 class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-slate-400">Contact</h3>
             <ul class="space-y-3 text-sm text-slate-300">
-              <li><a href="mailto:info@singhinfra.in" class="transition hover:text-amber">info@singhinfra.in</a></li>
-              <li><a href="mailto:projects@singhinfra.in" class="transition hover:text-amber">projects@singhinfra.in</a></li>
-              <li><a href="tel:+919876543210" class="transition hover:text-amber">+91 98765 43210</a></li>
-              <li>Operational across infrastructure corridors</li>
+              <li><a href="mailto:santoshsinghp112@gmail.com" class="transition hover:text-rustSoft">santoshsinghp112@gmail.com</a></li>
+              <li>Proprietor: Santosh Singh</li>
+              <!-- <li>Regular registration / proprietorship</li> -->
             </ul>
           </div>
 
           <div>
-            <h3 class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-slate-400">Operational regions</h3>
+            <h3 class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-slate-400">Business profile</h3>
             <ul class="space-y-3 text-sm text-slate-300">
-              <li>Transmission line works</li>
-              <li>Substation erection zones</li>
-              <li>Industrial utility corridors</li>
-              <li>Pan-India site mobilization</li>
+              <li>Legal Name: SANTOSH SINGH</li>
+              <!-- <li>Trade Name: Singhinfra</li> -->
+              <li>Business Constitution: Proprietorship</li>
+              <!-- <li>Date of Commencement: 01/08/2022</li> -->
+              <li>Registration Type: Regular</li>
             </ul>
           </div>
 
           <div>
-            <h3 class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-slate-400">Digital footprint</h3>
+            <h3 class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-slate-400">Head office</h3>
             <p class="text-sm leading-7 text-slate-300">
-              This website presents a professional corporate profile for project inquiries and capability sharing. Specific project locations, commercial values, and contract details remain confidential to protect client privacy and NDA compliance.
+              Ward No. 10, Dist - Khagaria, Post - Chautham, At - Bharpura, Lagma, Khagaria, Bihar, 851201.
             </p>
           </div>
         </div>
 
-        <div class="mt-12 border-t border-slate-800 pt-6 text-sm text-slate-400">
+        <div class="lattice-divider mt-12"></div>
+
+        <div class="mt-6 text-sm text-slate-400">
           <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2026 Singh Infra. All rights reserved.</p>
-            <p>Power Erection & Transmission Tower Work</p>
+            <p>© 2026 Singhinfra. All rights reserved.</p>
+            <p>Transmission Tower Erection Contractor</p>
           </div>
         </div>
       </div>
