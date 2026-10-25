@@ -47,8 +47,12 @@ nav a:hover{border-color:var(--yellow)}
 @media(max-width:520px){.bar .btn{padding:10px 14px;font-size:.9rem}.logo span{display:none}}
 
 /* hero */
-.hero{padding:64px 0 0}
-.hero p.lead{font-size:1.2rem;margin:22px 0 40px}
+.hero{padding:0}
+.herobg{padding:88px 0 92px;color:#fff;background-color:#10202d;background-image:linear-gradient(90deg,rgba(9,19,29,.92) 0%,rgba(9,19,29,.75) 45%,rgba(9,19,29,.2) 100%),url(images/hero.jpg),url(images/hero-placeholder.svg);background-size:cover;background-position:center,right center,right center;border-bottom:2px solid var(--ink)}
+.herobg h1{text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.herobg p.lead{font-size:1.2rem;margin:22px 0 0;color:#eef3f7;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.hero .doorwrap{padding-top:40px}
+@media(max-width:760px){.herobg{padding:56px 0 60px;background-image:linear-gradient(rgba(9,19,29,.86),rgba(9,19,29,.7)),url(images/hero.jpg),url(images/hero-placeholder.svg)}}
 .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--ink)}
 .door{padding:32px;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
 .door.co{background:var(--white)}
@@ -124,7 +128,7 @@ footer p{margin:0 0 4px}
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#top"><b>Santosh Singh Infra</b><span>Trade name: Santosh Singh. Tower erection contractor, Khagaria, Bihar</span></a>
+    <a class="logo" href="#top"><b>Santosh Singh Infra</b><span>Trade name: Santosh Singh. Tower erection contractor</span></a>
     <nav aria-label="Main">
       <a href="#clients">Clients</a>
       <a href="#work">What we do</a>
@@ -137,10 +141,11 @@ footer p{margin:0 0 4px}
 
 <main id="top">
 <section class="hero">
-  <div class="wrap">
+  <div class="herobg"><div class="wrap">
     <h1>Transmission tower erection for EPC contractors</h1>
     <p class="lead">Santosh Singh Infra takes dedicated erection packages on EHV transmission lines and delivers them with trained rigging crews and strict site safety. We have worked this way since 2022.</p>
-
+  </div></div>
+  <div class="wrap doorwrap">
     <div class="doors">
       <div class="door co">
         <h2>I have an erection package</h2>
@@ -155,9 +160,7 @@ footer p{margin:0 0 4px}
       <div class="door ap">
         <h2>पहले से हमारे साथ हैं?<br><span style="font-size:1.5rem">Already working with us?</span></h2>
         <p>हमारी साइटों पर काम करने वालों के लिए पेमेंट ऐप डाउनलोड करें। Download the payment app for workers on our sites.</p>
-        <!-- <a class="btn y" href="App/sscompony.apk" download>ऐप डाउनलोड करें / Download app</a> -->
-         <!-- Add the github link here to get downloaded from -->
-          <a class="btn y" href="https://github.com/Vishalsng112/SScompony-releases/releases/download/build-15/SSCompany.apk" target="_blank" rel="noopener noreferrer">ऐप डाउनलोड करें / Download app</a>
+        <a class="btn y" href="https://github.com/Vishalsng112/SScompony-releases/releases/download/build-15/SSCompany.apk" target="_blank" rel="noopener noreferrer">ऐप डाउनलोड करें / Download app</a>
       </div>
     </div>
 
@@ -230,7 +233,7 @@ footer p{margin:0 0 4px}
       </ul>
       <div class="app">
         <p><b>पहले से हमारे साथ काम कर रहे हैं?</b><br>Already working with us? Install the payment app.</p>
-        <a class="btn" href="App/sscompony.apk" download>ऐप डाउनलोड करें / Download app</a>
+        <a class="btn" href="https://github.com/Vishalsng112/SScompony-releases/releases/download/build-15/SSCompany.apk" target="_blank" rel="noopener noreferrer">ऐप डाउनलोड करें / Download app</a>
       </div>
     </div>
 
